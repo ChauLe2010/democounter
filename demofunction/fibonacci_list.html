@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Số fibonacci: số thứ 3 = tổng 2 số đứng trước nó (số thứ 1 + số thứ 2)
+    //Dãy số fibonacci đầu tiên: 0 1 1 2 3 5 8 13 21...
+    function fibolist(quantity){
+        st1=0;
+        st2=1;
+        count=2;
+        document.write("Danh sach so fibonacci: "+st1+" "+st2+" ");
+        while(count<quantity){
+            st3=st1+st2;
+            count++;
+            document.write(st3+" ");
+            st1=st2;
+            st2=st3;
+        }
+    }
+    fibolist(10);
+</script>
+</body>
+</html>

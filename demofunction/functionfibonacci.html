@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibo(number){
+
+        if (number>=0&&number<=3) return true;
+        let a = 0;
+        let b = 1;
+        let c = a+b;
+        while(c<=number)
+        {
+            if(c == number) return true;
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        return false;
+    }
+    number=+prompt("Nhap so can kiem tra: ");
+    if(isFibo(number))
+        document.write(number+" dung so fibonacci");
+    else
+        document.write(number+" khong dung so fibonacci")
+</script>
+</body>
+</html>
