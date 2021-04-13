@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let number=1;
+    let sum=0;
+    while(count<20){
+        if(number%3==0){
+            count++;
+            sum+=number;
+            document.write(number + " ");
+        }
+        number++;
+    }
+    document.write("<br>Tong cac so chia het cho 3 la: "+sum);
+</script>
+</body>
+</html>

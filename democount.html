@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    - kiem tra 1 so chia het cho 3 - input: so, output: true/false
+    - hien thi 50 so chia het cho 3 - input: quantity, output: void
+    - tinh tong 50 so
+    let count=0;
+    let number=1;
+    let sum=0;
+    document.write("Danh sach cac so vua chia het cho 3 <br>")
+    while(count<50){
+        if(number%3==0){
+            count++;
+            sum+=number;
+            document.write(number + " ");
+        }
+        number++;
+    }
+    document.write("<br>Tong cac so: "+sum);
+</script>
+</body>
+</html>

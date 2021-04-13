@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isMod3(number){
+        if(number%3==0)
+            return true;
+        return false;
+    }
+    function displayMod3(quantity){
+        let count=0;
+        let number=1;
+        while(count<quantity){
+            if(isMod3(number)){
+                count++;
+                document.write(number + " ");
+            }
+            number++
+        }
+    }
+    quantity=+prompt("Nhap so luong: ");
+    displayMod3(quantity);
+
+    // number=+prompt("Nhap so can kiem tra: ");
+    // if(isMod3(number))
+    //     alert(number + " chia het cho 3");
+    // else
+    //     alert(number+ " khong chia het cho 3");
+</script>
+
+</body>
+</html>
